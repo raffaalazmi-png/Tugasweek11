@@ -1,0 +1,26 @@
+@reference "../../../../app/globals.css";
+
+.form {
+  @apply flex flex-col gap-4;
+}
+.group {
+  @apply flex flex-col gap-1.5;
+}
+.label {
+  @apply text-sm font-semibold text-slate-800;
+}
+.input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-base text-slate-900 placeholder:text-slate-400;
+}
+.inputError {
+  @apply border-red-600;
+}
+.hint {
+  @apply text-xs text-slate-500;
+}
+.error {
+  @apply min-h-4 text-xs text-red-600;
+}
+.actions {
+  @apply mt-2 flex justify-end gap-2.5;
+}
