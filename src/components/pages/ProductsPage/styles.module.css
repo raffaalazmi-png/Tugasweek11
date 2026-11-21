@@ -1,27 +1,47 @@
 @reference "../../../../app/globals.css";
 
 .header {
-    @apply mb-8;
+  @apply mb-6;
 }
-.eyebrow {
-    @apply mb-3 text-sm font-semibold text-blue-600;
+.headerRow {
+  @apply flex flex-wrap items-center justify-between gap-4;
+}
+.headerActions {
+  @apply flex flex-wrap items-center gap-2.5;
 }
 .title {
-    @apply text-3xl font-bold tracking-tight text-slate-900;
+  @apply text-3xl font-bold tracking-tight text-slate-900;
 }
 .description {
-    @apply mt-3 max-w-2xl text-sm leading-6 text-slate-500;
+  @apply mt-1.5 max-w-2xl text-sm leading-6 text-slate-500;
 }
-.notice {
-    @apply mt-6 text-sm leading-6 text-slate-600;
-}
-
 .toolbar {
-    @apply mb-6 flex flex-wrap items-center gap-4;
+  @apply mb-5 flex flex-wrap items-center justify-between gap-4;
 }
-.hint {
-    @apply max-w-xl text-sm leading-6 text-slate-500;
+.searchBox {
+  @apply relative w-full max-w-sm;
+}
+.searchIcon {
+  @apply pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-slate-400;
+}
+.searchInput {
+  @apply w-full rounded-lg border border-slate-300 bg-white py-2.5 pr-3.5 pl-9 text-base text-slate-900 placeholder:text-slate-400;
+}
+.countBadge {
+  @apply text-sm font-medium whitespace-nowrap text-slate-500;
 }
 .error {
-    @apply mb-6 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700;
+  @apply mb-5 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700;
+}
+.emptyState {
+  @apply rounded-xl border border-dashed border-slate-300 bg-white px-4 py-10 text-center text-sm text-slate-500;
+}
+.footer {
+  @apply mt-6 flex flex-wrap items-center justify-between gap-3;
+}
+.summary {
+  @apply text-sm text-slate-500;
+}
+.status {
+  @apply text-sm text-slate-600;
 }
